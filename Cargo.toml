@@ -1,0 +1,17 @@
+[package]
+name = "libeyelink-sys"
+version = "0.1.0"
+authors = ["Luke Hsiao <lwhsiao@stanford.edu>"]
+description = "Rust FFI bindings for the Linux SR Research Eyelink SDK."
+repository = "https://github.com/lukehsiao/libeyelink-sys"
+edition = "2018"
+build = "build.rs"
+links = "eyelink"
+readme = "README.md"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[badges]
+maintenance = { status = "experimental" }
+
+[dependencies]
+libc = "0.2.72"
