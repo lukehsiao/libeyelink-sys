@@ -2,6 +2,8 @@
 #![allow(non_camel_case_types)]
 #![allow(non_snake_case)]
 
-use libc::*;
+#[cfg(not(feature = "sdl-graphics"))]
+include!("./base.rs");
 
-include!("./bindings.rs");
+#[cfg(feature = "sdl-graphics")]
+include!("./sdl-graphics.rs");

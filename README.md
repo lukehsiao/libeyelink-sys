@@ -6,9 +6,13 @@ The `libeyelink-sys` crate provides declarations and linkage for the
 higher-level or safe abstractions over the native library functions.
 
 The bindings were generated automatically with [bindgen]:
-
 ```
-bindgen include/eyelink_api.h -o src/bindings.rs
+bindgen /usr/include/core_expt.h -o src/bindings.rs
+```
+
+If the `sdl-graphics` feature is enabled, the bindings are generated from:
+```
+bindgen /usr/include/sdl_expt.h -o src/sdl-graphics.rs --blacklist-function '^str.*' --blacklist-function '.*cvt.*'
 ```
 
 ## Dependencies
