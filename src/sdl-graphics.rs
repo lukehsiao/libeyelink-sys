@@ -5973,7 +5973,7 @@ pub struct SDL_Color {
     pub r: Uint8,
     pub g: Uint8,
     pub b: Uint8,
-    pub a: Uint8,
+    pub unused: Uint8,
 }
 #[test]
 fn bindgen_test_layout_SDL_Color() {
