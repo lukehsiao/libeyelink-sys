@@ -1,6 +1,6 @@
 [package]
 name = "libeyelink-sys"
-version = "0.1.1"
+version = "0.1.2-alpha.0"
 authors = ["Luke Hsiao <lwhsiao@stanford.edu>"]
 description = "Rust FFI bindings for the Linux SR Research Eyelink SDK."
 repository = "https://github.com/lukehsiao/libeyelink-sys"
