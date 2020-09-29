@@ -12,7 +12,7 @@ bindgen /usr/include/core_expt.h -o src/bindings.rs
 
 If the `sdl-graphics` feature is enabled, the bindings are generated from:
 ```
-bindgen /usr/include/sdl_expt.h -o src/sdl-graphics.rs --blacklist-function '^str.*' --blacklist-function '.*cvt.*'
+bindgen /usr/include/sdl_expt.h -o src/sdl-graphics.rs --blacklist-function '^str.*' --blacklist-function '.*cvt.*' --with-derive-default
 ```
 
 ## Dependencies
