@@ -7,7 +7,7 @@ higher-level or safe abstractions over the native library functions.
 
 The bindings were generated automatically with [bindgen]:
 ```
-bindgen /usr/include/core_expt.h -o src/bindings.rs
+bindgen /usr/include/core_expt.h -o src/base.rs --with-derive-default
 ```
 
 If the `sdl-graphics` feature is enabled, the bindings are generated from:
